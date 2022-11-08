@@ -1,0 +1,432 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Fonts
+
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+
+ */
+
+/* Global CSS */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bebas Neue', cursive;
+	color: #3d2514;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Section */
+
+header {
+	background: url(../images/banner-bg.png) no-repeat center top;
+	background-size: cover;
+}
+
+.head-icon {
+	margin: 14px 0;
+	text-align: right;
+}
+
+.head-icon ul li {
+	display: inline;
+	margin: 0 10px;
+	font-weight: 600;
+	color: #3d2514;
+}
+
+.navbar-brand img {
+	margin-bottom: 20px;
+	width: 90%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	position: relative;
+	text-transform: uppercase;
+    padding: 10px 15px;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #42200b;
+    letter-spacing: 2px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	left: 50%;
+	bottom: 0;
+	background: #42200b;
+	transition: all 0.4s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+	width: 100%;
+	left: 0;
+}
+
+/* Banner Section */
+
+.banner-section {
+	padding: 0 0 30px;
+}
+
+.banner-content h2 {
+	padding: 10px 10px;
+    text-transform: uppercase;
+	font-size: 20px;
+    border: 2px dashed #42200b;
+    width: 68%;
+    word-spacing: 3px;
+}
+
+.banner-content h3 {
+	text-transform: uppercase;
+	font-size: 115px;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 2px 3px 3px #fff;
+}
+
+.banner-content h4 {
+	text-transform: uppercase;
+	font-size: 76px;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 2px 3px 3px #fff;
+}
+
+.banner-img {
+	position: relative;
+}
+
+.price-img {
+	position: absolute;
+    top: 62%;
+    left: 0;
+    width: 50%;
+    height: 38%;
+}
+
+/* Menu Section */
+
+.menu-section {
+	padding-top: 84px;
+}
+
+.menu-content {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.menu-item {
+	position: absolute;
+    top: 10%;
+    left: 6%;
+}
+
+.menu-item h3 {
+	font-size: 24px;
+    color: #fff;
+}
+
+.menu-item h2 {
+	font-size: 34px;
+    color: #fff;
+}
+
+/* Burger Menu Section */
+
+.burger-section {
+	padding: 100px 0 50px;
+}
+
+.burger-head h4 {
+	margin: 0 auto;
+    padding: 10px 10px;
+    width: 20%;
+	text-align: center;
+    background: #ffc045;
+    color: #3d2514;
+}
+
+.burger-head h2 {
+	text-transform: uppercase;
+    margin: 30px 0;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Alfa Slab One', cursive;
+
+}
+
+.burger-head p {
+	text-align: center;
+    color: #3d2514;
+}
+
+/* Burger Items */
+
+.burger-content {
+	margin-top: 5%;
+}
+
+.burger-items h2 {
+	margin: 5% 0;
+}
+
+.burger-items p {
+	
+}
+
+.btn-burger {
+	margin: 10%;
+    padding: 3% 12%;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    color: #fff;
+    background: #bf2222;
+    letter-spacing: 2px;
+    transition: all 0.4s; 
+}
+
+.btn-burger:hover {
+	background: #ffc045;
+    color: #3d2514;
+}
+
+/* Events Section */
+
+.events-section {
+	padding: 50px 0;
+}
+
+.event-box {
+	box-shadow: 1px 1px 14px #000;
+    padding: 28px;
+}
+
+.event-content h4 {
+	margin: 5% 0 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.event-content h2 {
+	text-transform: uppercase;
+    font-size: 36px;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.event-content p {
+	margin: 4% 0 0;
+	padding-right: 8%;
+    font-size: 20px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+	text-align: left;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffc045;
+}
+
+/* Contact Form */
+
+.contact-section {
+	padding: 100px 0;
+	background: url(../images/contact-bg.png) no-repeat center top;
+	background-size: cover;
+}
+
+.contact-head h3 {
+	font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.contact-head h2 {
+	text-transform: uppercase;
+    margin-bottom: 80px;
+	font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+}
+
+.contact-form .form-control {
+	width: 98%;
+    padding: 12px;
+    border: 1px solid #3d2514;
+    border-radius: 0;
+    color: #000;
+}
+
+.contact-form .form-control::placeholder {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #3d2514;
+}
+
+.contact-form .form-control:focus{
+	box-shadow: none;
+}
+
+.contact-form .btn-contact {
+	padding: 12px;
+    width: 98%;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    font-family: 'Alfa Slab One', cursive;
+    background: #bf2222;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+}
+
+.contact-form .btn-contact:hover {
+	background: #ffc045;
+	color: #3d2514;
+}
+
+/* Footer Section */
+
+footer {
+	background: url(../images/footer-bg.png) no-repeat center top;
+	background-size: cover;
+	padding: 80px 0 20px;
+}
+
+footer img {
+	padding-bottom: 28px;
+	max-width: 75%;
+}
+
+footer p {
+	color: #fff;
+	line-height: 26px;
+}
+
+.useful-links h2 {
+	margin-top: 17px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.links-content ul {
+	margin-top: 28px;
+}
+
+.links-content ul li a {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #fff;
+	line-height: 30px;
+	transition: all 0.3s;
+}
+
+.links-content ul li a:hover {
+	color: #ffc045;
+    padding-left: 5px;
+}
+
+.social-media ul li {
+	display: inline;
+}
+
+.social-media ul li a .fa-brands {
+	margin: 28px 3px 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 2px;
+    background: #eee;
+    text-align: center;
+    line-height: 26px;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.social-media ul li a .fa-brands:hover {
+	background: #ffc045;
+}
+
+.contact-info ul li {
+	list-style: none;
+	color: #eee;
+	line-height: 38px;
+}
+
+.fa-solid {
+	width: 28px;
+}
+.fa-regular {
+	width: 28px;
+}
+
+.copy-right p {
+	margin: 70px 0 0;
+}
+
+/* Responsive For Mobile */
+
+@media (min-width: 320px) and (max-width: 756px) {
+
+	.head-icon { margin: 10px 0;text-align: center;font-size: 14px;}
+	.head-icon img { width: 9%;}
+	.navbar-expand-lg .navbar-nav .nav-link {padding: 8px 12px;font-size: 14px;letter-spacing: 1px;}
+	.navbar-brand img { margin-bottom: 0; width: 70%;}
+	.banner-content h2 { padding: 8px 8px;margin-top: 20px;width: 81%;font-size: 16px;word-spacing: 2px;}
+	.banner-content h3 { margin-top: 12px;font-size: 50px;}
+	.banner-content h4 {font-size: 36px;}
+	.price-img {width: 35%;}
+	.menu-section {padding-top: 30px;}
+	.menu-content {margin-bottom: 15px;}
+	.menu-item h3 { font-size: 16px;}
+	.menu-item h2 { font-size: 22px;}
+	.burger-section { padding: 30px 0 10px;}
+	.burger-head h4 { width: 48%;font-size: 18px;}
+	.burger-head h2 { margin: 20px 0;font-size: 32px;}
+	.burger-items { margin-bottom: 10%;}
+	.burger-items img {width: 80%;}
+	.burger-items h2 { margin: 4% 0;font-size: 24px;}
+	.btn-burger {margin: 0;padding: 3% 6%;font-size: 14px;}
+	.events-section { padding: 20px 0;}
+	.event-box { padding: 10px 28px;}
+	.event-content h4 {font-size: 18px;text-align: center;}
+	.event-content h2 {font-size: 26px;text-align: center;}
+	.event-content p { margin: 4% 0 3%;padding-right: 0;text-align: center;font-size: 16px;}
+	.owl-theme .owl-nav.disabled + .owl-dots { text-align: center;}
+	.contact-section { padding: 30px 0;}
+	.contact-head h3 { font-size: 20px;}
+	.contact-head h2 { margin-bottom: 28px;font-size: 26px;}
+	.contact-form .form-control { padding: 10px;}
+	.contact-form .btn-contact {font-size: 16px;}
+	footer {padding: 30px 0; text-align: center;}
+	footer img { padding-bottom: 20px;max-width: 58%;}
+	footer p {line-height: 23px;}
+	.useful-links h2 { margin-top: 8px;font-size: 32px;}
+	.links-content ul { margin-top: 10px;}
+	.links-content ul li a {line-height: 25px;}
+	.social-media ul li a .fa-brands { margin: 10px 3px 0;}
+	.copy-right p { margin: 30px 0 0;}
+
+}
